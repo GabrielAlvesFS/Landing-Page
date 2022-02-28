@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+/* Reset CSS */
+*, :after, :before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a{
+    text-decoration: none;
+    list-style: none;
+    color: #737380;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: #4E21B7;
+}
+
+/* Header CSS */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: #121214;
+}
+
+header .logo{
+    width: 50px;
+    height: 50px;
+}
+
+.navbar ul{
+    display: flex;  
+}
+
+.navbar ul li{
+    margin: 0 .5rem;
+}
+
+.navbar ul li a{
+    display: block;
+    padding: .5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease 0s;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar ul li a:hover{
+    color: white;
+    border-bottom: 2px solid #9466ff;
+}
+
+/* toggle button */
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #9466ff;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+    header{
+        height: 60px;
+        justify-content: space-between;
+        padding: 0 2rem;
+        position: relative;
+    }
+
+    header .logo{
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbar{
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #121214;
+    }
+    
+    .navbar ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .navbar ul li{
+        margin-top: .4rem;
+        text-align: center;
+    }
+
+    .toggle-button{
+        display: flex;
+        position: unset;
+    }
+
+    .navbar.active{
+        display: flex;
+    }
+}
