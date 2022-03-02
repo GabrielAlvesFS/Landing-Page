@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 
 /* Reset CSS */
 *, :after, :before{
@@ -26,8 +26,9 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
     height: 80px;
-    background-color: #121214;
+    background-color: #000000;
 }
 
 header .logo{
@@ -76,8 +77,59 @@ header .logo{
     border-radius: 10px;
 }
 
+/* Main Container */
+main{
+    width: 100%;
+    height: 700px;
+}
 
+main .main-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #121214;
+}
 
+main .main-content{
+    align-self: center;
+    border-top: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+    padding: 2rem 0;
+}
+
+main .main-content h1{
+    margin: 0 0 5rem 1rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    font-style: italic;
+    color: white;
+}
+
+main .main-content p{
+    margin: 0 0 5rem 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 2.3rem;
+    color: #cfc5c5;
+}
+
+main .main-image{
+    width: 700px;
+    height: 100%;
+}
+
+main .main-image .image-content{
+    -webkit-mask-image: linear-gradient(to right, transparent 5%, black 120%);
+    mask-image: linear-gradient(to right, transparent 0%, black 100%);
+    width: 700px;
+    height: 100%; 
+    object-fit: cover;
+}
 
 
 
@@ -94,7 +146,10 @@ header .logo{
 
 /* Responsividade */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    body{
+        height: 2000px;
+    }
     header{
         height: 60px;
         justify-content: space-between;
@@ -113,7 +168,9 @@ header .logo{
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: #121214;
+        border-top: 2px solid #9466ff;
+        border-bottom: 2px solid #9466ff;
+        background-color: #000000;
     }
     
     .navbar ul{
@@ -133,5 +190,45 @@ header .logo{
 
     .navbar.active{
         display: flex;
+    }
+
+    main{
+        width: 100%;
+        height: fit-content;
+    }
+
+    main .main-content{
+        align-self: flex-start;
+    }
+
+    main .main-content h1{
+        margin: 0 0 3rem 0;
+    }
+
+    main .main-content p{
+        margin: 0 0 1rem 0;
+    }
+
+    main .main-image{
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and ( max-width: 1200px) {
+    main .main-content h1{
+        margin: 0 0 3rem 0;
+    }
+
+    main .main-content p{
+        margin: 0
+    }
+
+    main .main-image{
+        width: 350px;
+        height: 100%;
+    }
+
+    main .main-image .image-content{
+        width: 350px;
     }
 }
