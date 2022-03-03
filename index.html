@@ -7,6 +7,10 @@
     <title>Courses</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <!-- Script -->
     <script src="script.js" defer></script>
 </head>
@@ -16,9 +20,9 @@
         <a href="#"><img class="logo" src="" alt="Logo"></a>
         <nav class="navbar">
             <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Our Courses</a></li>
-                <li><a href="#">Partners</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#courses">Our Courses</a></li>
+                <li><a href="#partners">Partners</a></li>
             </ul>
         </nav>
         <!-- Toggle Button -->
@@ -29,17 +33,72 @@
         </a>
     </header>
     <!-- Header End -->
-
+    <!-- Main -->
     <main>
-        <section class="main-container">
+        <section id="about" class="main-container">
             <div class="main-content">
                 <h1>About Us</h1> 
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus cumque esse temporibus explicabo, animi deserunt ex, magnam veniam aliquid repellendus similique quisquam magni quia maiores eius nihil molestiae amet non nulla tempora impedit quod eaque saepe libero. Neque cumque quae eligendi, modi ipsam eaque et aspernatur eveniet ab reiciendis optio aliquid.</p>
             </div>
             <div class="main-image">
-                <img src="https://www.elitevale.com.br/wp-content/uploads/2020/05/Pessoa-estudando-Foto-Freepik.jpg" alt="Imagem principal do curso" class="image-content">
+                <img src="https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg" alt="Imagem principal do curso" class="image-content">
             </div>
         </section>
     </main>
+    <!-- Main End -->
+    <!-- Section Products -->
+    <section id="courses" class="products-container">
+        <h2>Our Courses</h2>
+        <div class="product-container">
+            <h3><i class="fa-solid fa-code"></i> Front End</h3>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="https://bognarjunior.files.wordpress.com/2014/12/1417589451_html-256.png" alt="HTML5 Symbol">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex sit nesciunt earum excepturi ratione at?</p>
+                </div>
+                <div class="card">
+                    <img src="https://bs-uploads.toptal.io/blackfish-uploads/uploaded_file/file/185789/image-1581552024454-3a5f9ecad40f39e372110b676dba5ac0.png" alt="CSS3 Symbol">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex sit nesciunt earum excepturi ratione at?</p>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT750Dm_jQKaHMd3HMpJg5IeF-c3BnH-dnidw&usqp=CAU" alt="Javascript Symbol">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex sit nesciunt earum excepturi ratione at?</p>
+                </div>
+                <div class="card">
+                    <img src="https://s3.amazonaws.com/fullstackfeed/images/vuejs-2.jpg" alt="VueJS Symbol">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex sit nesciunt earum excepturi ratione at?</p>
+                </div>
+            </div>
+            <button>
+                <a href="#" class="button"><i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
+            </button>
+        </div>
+
+        <div class="product-container">
+            <h3><i class="fa-solid fa-code"></i> Back End</h3>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/vectors/question-mark-red-neon-light-on-black-wall-vector-id1143248834?k=20&m=1143248834&s=612x612&w=0&h=EAmzg9h2uNUGwG8mB8B9bG4mjrMpqdUb1lmGtR-9wvQ=" alt="?">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex sit nesciunt earum excepturi ratione at?</p>
+                </div>
+                <div class="card">
+                    <img src="https://media.istockphoto.com/vectors/question-mark-red-neon-light-on-black-wall-vector-id1143248834?k=20&m=1143248834&s=612x612&w=0&h=EAmzg9h2uNUGwG8mB8B9bG4mjrMpqdUb1lmGtR-9wvQ=" alt="?">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex sit nesciunt earum excepturi ratione at?</p>
+                </div>
+                <div class="card">
+                    <img src="https://media.istockphoto.com/vectors/question-mark-red-neon-light-on-black-wall-vector-id1143248834?k=20&m=1143248834&s=612x612&w=0&h=EAmzg9h2uNUGwG8mB8B9bG4mjrMpqdUb1lmGtR-9wvQ=" alt="?">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex sit nesciunt earum excepturi ratione at?</p>
+                </div>
+                <div class="card">
+                    <img src="https://media.istockphoto.com/vectors/question-mark-red-neon-light-on-black-wall-vector-id1143248834?k=20&m=1143248834&s=612x612&w=0&h=EAmzg9h2uNUGwG8mB8B9bG4mjrMpqdUb1lmGtR-9wvQ=" alt="?">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex sit nesciunt earum excepturi ratione at?</p>
+                </div>
+            </div>
+            <button>
+                <a href="#" class="button"><i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
+            </button>
+        </div>
+    </section>
+    <!-- Section Products End -->
 </body>
 </html>

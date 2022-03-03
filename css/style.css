@@ -18,7 +18,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     height: 100vh;
-    background-color: #4E21B7;
+    background-color: #FFFFFF;
 }
 
 /* Header CSS */
@@ -84,53 +84,142 @@ main{
 }
 
 main .main-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
     height: 100%;
-    background-color: #121214;
+    position: relative;
 }
 
 main .main-content{
-    align-self: center;
-    border-top: 4px solid #000000;
-    border-bottom: 4px solid #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 101%;
     padding: 2rem 0;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(18, 18, 20, 0) 0%, #121214 100%);
 }
 
 main .main-content h1{
     margin: 0 0 5rem 1rem;
     text-align: center;
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 500;
     font-style: italic;
-    color: white;
+    color: #FFFFFF;
 }
 
 main .main-content p{
     margin: 0 0 5rem 1rem;
+    max-width: 1000px;
     text-align: center;
     font-size: 1.5rem;
     font-weight: 400;
     font-style: italic;
     line-height: 2.3rem;
-    color: #cfc5c5;
+    color: #FFFFFF;
 }
 
 main .main-image{
-    width: 700px;
+    width: 100%;
     height: 100%;
 }
 
 main .main-image .image-content{
-    -webkit-mask-image: linear-gradient(to right, transparent 5%, black 120%);
-    mask-image: linear-gradient(to right, transparent 0%, black 100%);
-    width: 700px;
+    width: 100%;
     height: 100%; 
     object-fit: cover;
 }
 
+/* Section Courses */
+
+.products-container{
+    width: 100%;
+    height: fit-content;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.products-container h2{
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+    color: #000000;
+}
+
+.product-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.product-container h3{
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.product-container .cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.product-container .card{
+    width: 200px;
+    height: fit-content;
+    padding-bottom: 1rem;
+}
+
+.product-container .card img{
+    border-radius: 100%;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 5px 20px #121214;
+}
+.product-container .card p{
+    margin-top: 1.5rem;
+    text-align: center; 
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.product-container button{
+    margin: 3rem 0;
+    width: 200px;
+    height: 40px;
+    border: 0;
+    border-radius: 25px;
+    background-color: #59863A;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.product-container button:hover{
+    border: 2px solid #000000;
+    box-shadow: 0px 5px 20px #121214;
+}
+
+.product-container .button{
+    padding: 8px 35px;
+    color: white;
+}
+
+.product-container .button:hover{
+    color: #000000;
+}
 
 
 
@@ -171,6 +260,7 @@ main .main-image .image-content{
         border-top: 2px solid #9466ff;
         border-bottom: 2px solid #9466ff;
         background-color: #000000;
+        z-index: 999;
     }
     
     .navbar ul{
@@ -197,6 +287,24 @@ main .main-image .image-content{
         height: fit-content;
     }
 
+    main .main-content h1{
+        margin: 0 0 3rem 0;
+    }
+
+    main .main-content p{
+        margin: 0 0 1rem 0;
+    }
+
+    main .main-image .image-content{
+        height: calc(100vh - 60px);
+    }
+}
+
+@media (min-width: 769px) and ( max-width: 1200px) {
+    main{
+        height: 600px;
+    }
+
     main .main-content{
         align-self: flex-start;
     }
@@ -206,29 +314,6 @@ main .main-image .image-content{
     }
 
     main .main-content p{
-        margin: 0 0 1rem 0;
-    }
-
-    main .main-image{
-        display: none;
-    }
-}
-
-@media (min-width: 769px) and ( max-width: 1200px) {
-    main .main-content h1{
-        margin: 0 0 3rem 0;
-    }
-
-    main .main-content p{
         margin: 0
-    }
-
-    main .main-image{
-        width: 350px;
-        height: 100%;
-    }
-
-    main .main-image .image-content{
-        width: 350px;
     }
 }
