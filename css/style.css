@@ -221,17 +221,74 @@ main .main-image .image-content{
     color: #000000;
 }
 
+/* Section Partners */
+.partners-container{
+    width: 100%;
+    height: fit-content;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    background-color: #121214;
+    text-align: center;
+}
 
+.partners-container h2{
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+    color: #c1c1e0;
+}
 
+.partners-cards{
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 2rem;   
+}
 
+.partners-cards .partners{
+    width: 140px;
+    height: 200px;
+    padding: .5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 10px 15px #272727;
+}
 
+.partners-cards .partners a{
+    color: #c1c1e0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
 
+.partners-cards .partners img{
+    margin: 1rem 0;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 100%;
+    box-shadow: 0px 10px 15px #272727;
+}
 
+.partners-container .partners-cards .partners .social-media{
+    display: flex;
+    gap: 0 .8rem;
+    font-size: 1.5rem;
+}
 
+.social-media .fa-facebook{
+    color: #1672E6;
+}
 
+.social-media .fa-instagram{
+    color: #C22B8E;
+}
 
-
-
+.social-media .fa-twitter{
+    color: #1C98E5;
+}
 
 /* Responsividade */
 
